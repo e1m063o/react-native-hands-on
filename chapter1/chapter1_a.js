@@ -9,7 +9,7 @@ export default class App extends Component {
       <View style={styles.container}>
         {/* TODO: 2. 読み込んだComponentを使う */}
         <Text>
-          Hello, World!
+          Chapter 1, Finished!
         </Text>
       </View>
     );

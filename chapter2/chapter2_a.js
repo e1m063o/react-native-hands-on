@@ -6,7 +6,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <MyComponent content="テスト" />
+        <MyComponent />
       </View>
     );
   }
@@ -16,7 +16,7 @@ class MyComponent extends Component {
   render() {
     return (
       <Text>
-        {this.props.content}
+        Chapter 2, Finished!
       </Text>
     )
   }

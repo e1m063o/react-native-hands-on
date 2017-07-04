@@ -5,13 +5,13 @@ import { Constants } from 'expo';
 export default class App extends Component {
   constructor() {
     super();
-    // TODO: 1. this.state に { content: "テスト" } というオブジェクする代入しておく
+    // TODO: 1. this.state に { content: "Chapter 4, Finished!" } というオブジェクトを代入する
     this.state = ...;
   }
   render() {
     return (
       <View style={styles.container}>
-        {/* TODO: 2. Stateに入っている content を MyComponent に渡してやる */}
+        {/* TODO: 2. Stateに入っている content を MyComponent に渡す */}
         <MyComponent content={...} />
       </View>
     );

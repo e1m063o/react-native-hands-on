@@ -5,7 +5,7 @@ import { Constants } from 'expo';
 export default class App extends Component {
   constructor() {
     super();
-    this.state = { content: "テスト" };
+    this.state = { content: "Chapter 4, Finished!" };
   }
   render() {
     return (

@@ -6,7 +6,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        {/* TODO: 2. MyComponent を読み込む */}
+        {/* TODO: 2. MyComponent を使う */}
       </View>
     );
   }
@@ -14,6 +14,10 @@ export default class App extends Component {
 
 // TODO: 1. MyComponent を作成する
 class MyComponent extends Component {
+  render() {
+    return (
+    );
+  }
 }
 
 const styles = StyleSheet.create({
