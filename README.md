@@ -24,10 +24,17 @@
 
 - [問題文](/chapter5/chapter5_q.js) / [ヒント](/chapter5/chapter5_h.js) / [解答例](/chapter5/chapter5_a.js)
 
-## Chapter 6. TBD
+## Chapter 6. ToDoアプリを作ってみる
 
 - [問題文](/chapter6/chapter6_q.js) / [ヒント](/chapter6/chapter6_h.js) / [解答例](/chapter6/chapter6_a.js)
 
-## 参考
+## 参考URL
 
-- [React Native 公式Document](https://facebook.github.io/react-native/docs/getting-started.html)
+- React Native 公式
+  - [React Native 公式ドキュメント](https://facebook.github.io/react-native/docs/getting-started.html)
+  - [Button Component](https://facebook.github.io/react-native/docs/button.html)
+  - [TouchableHighlight Component](https://facebook.github.io/react-native/docs/touchablehighlight.html)
+  - [TextInput Component](https://facebook.github.io/react-native/docs/textinput.html)
+- Expo
+  - [https://snack.expo.io/](https://snack.expo.io/)
+
