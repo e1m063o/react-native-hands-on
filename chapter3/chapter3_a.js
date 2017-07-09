@@ -1,3 +1,18 @@
+/*
+
+# ゴール
+
+MyComponentにcontentプロパティを渡し、MyComponent内でその内容を表示する。
+iOSデバイスの画面上に、Chapter 3, Finished! と表示されれば完成。
+
+# 手順
+
+1. AppComponent の render() 内で MyComponent を挿入する際に、
+   content=”Chapter 3, Finished!” というプロパティを追加する
+2. MyComponent の <Text></Text> の中に、{this.props.content} を記述する
+
+*/
+
 import React, { Component } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { Constants } from 'expo';
