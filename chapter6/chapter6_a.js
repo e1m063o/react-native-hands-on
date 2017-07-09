@@ -9,15 +9,15 @@ FIXMEの部分を修正し、後述する仕様を満たすToDoアプリを完�
 
 ## コンポーネントの階層構造
 
-- App
-  - View
-    - InputField
-      - View
-        - TextInput
-    - ToDoItem
-      - View
-        - TouchableHighlight
-        - Text
+- App (自作)
+  - View (ReactNative)
+    - InputField (自作)
+      - View (ReactNative)
+        - TextInput (ReactNative)
+    - ToDoItem (自作)
+      - View (ReactNative)
+        - TouchableHighlight (ReactNative)
+        - Text (ReactNative)
     - ...
 
 ## 機能
