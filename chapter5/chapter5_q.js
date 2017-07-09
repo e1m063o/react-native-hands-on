@@ -23,10 +23,13 @@ export default class App extends Component {
     super();
     this.state = { content: 0 };
   }
+
+  /* ボタンが押された時に実行するメソッド */
   handlePressButton() {
     /* TODO: 2. this.setState((prevState) => {}) を記述する */
     /* TODO: 3. (prevState) => {} が { content: prevState.content + 1 } を return するようにする */
   }
+
   render() {
     return (
       <View style={styles.container}>
@@ -44,7 +47,7 @@ export default class App extends Component {
 class MyComponent extends Component {
   render() {
     return (
-      <Text>
+      <Text style={styles.countArea}>
         {this.props.content}
       </Text>
     )
@@ -58,5 +61,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
+  },
+  countArea: {
+    fontSize: 30,
   },
 });
