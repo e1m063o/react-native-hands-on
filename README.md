@@ -4,6 +4,14 @@
 
 - [https://snack.expo.io/](https://snack.expo.io/)
 
+### ソースコードの変更点が反映されない場合
+
+端末を振るとExpoのメニューが出て来るので、以下のどれかを試してみましょう
+
+1. Refresh
+2. Go To Expo Home して QRコードを再読込
+3. メニューが出ない場合は、アプリのメモリを開放して再起動
+
 ## Chapter 1. Component を使う
 
 - [問題文](/chapter1/chapter1_q.js) / [ヒント](/chapter1/chapter1_h.js) / [解答例](/chapter1/chapter1_a.js)
@@ -32,9 +40,11 @@
 
 - React Native 公式
   - [React Native 公式ドキュメント](https://facebook.github.io/react-native/docs/getting-started.html)
-  - [Button Component](https://facebook.github.io/react-native/docs/button.html)
-  - [TouchableHighlight Component](https://facebook.github.io/react-native/docs/touchablehighlight.html)
-  - [TextInput Component](https://facebook.github.io/react-native/docs/textinput.html)
+  - [Viewコンポーネント](https://facebook.github.io/react-native/docs/view.html)
+  - [Textコンポーネント](https://facebook.github.io/react-native/docs/text.html)
+  - [Buttonコンポーネント](https://facebook.github.io/react-native/docs/button.html)
+  - [TouchableHighlightコンポーネント](https://facebook.github.io/react-native/docs/touchablehighlight.html)
+  - [TextInputコンポーネント](https://facebook.github.io/react-native/docs/textinput.html)
 - Expo
   - [https://snack.expo.io/](https://snack.expo.io/)
 
