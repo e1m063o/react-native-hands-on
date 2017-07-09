@@ -2,12 +2,12 @@
 
 # ゴール
 
-Textコンポーネントを使って、テキストを表示する
+Textコンポーネントを使って、テキストを表示する。
 iOSデバイスの画面上に、Chapter 1, Finished! と表示されれば完成。
 
 # 手順
 
-1. react-native パッケージから、Textコンポーネントを読み込む
+1. react-native パッケージから、Textコンポーネントを import する
 2. Appコンポーネントのrender()内（<View></View>の内側）に、
    <Text>Chapter 1, Finished!</Text>
    と記述し、Textコンポーネントを挿入する
@@ -15,7 +15,7 @@ iOSデバイスの画面上に、Chapter 1, Finished! と表示されれば完�
 */
 
 import React, { Component } from 'react';
-// TODO: 1. Textコンポーネントを読み込む
+/* TODO: 1. Textコンポーネントを読み込む */
 import { FIXME, View, StyleSheet } from 'react-native';
 import { Constants } from 'expo';
 
@@ -37,5 +37,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
+    fontSize: 20,
   }
 });
