@@ -1,5 +1,21 @@
+/*
+
+# ゴール
+
+画面上のボタンが押された場合に、Appコンポーネントの状態を書き換える処理を記述する。
+iOSデバイスの画面で、ボタンを押すごとに表示されている数値が +1 されれば完成。
+
+# 手順
+
+1. ButtonコンポーネントのonPressプロパティを編集し、
+   ボタンが押された際にthis.handlePressButton() が実行されるようにする
+2. handlePressButton() 内を編集し、this.setState((prevState) => {...}) が実行されるようにする
+3. this.setStateの引数である (prevState) => { } が { content: prevState.content + 1 } をreturnするようにする
+
+*/
+
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, Button } from 'react-native';
 import { Constants } from 'expo';
 
 export default class App extends Component {
@@ -8,13 +24,18 @@ export default class App extends Component {
     this.state = { content: 0 };
   }
   handlePressButton() {
-    // TODO: 2. this.setState() を実装し、this.state.content の数値に +1 する
+    /* TODO: 2. this.setState((prevState) => {}) を記述する */
+    /* TODO: 3. (prevState) => {} が { content: prevState.content + 1 } を return するようにする */
   }
   render() {
     return (
       <View style={styles.container}>
         <MyComponent content={this.state.content} />
-        {/* TODO: 1. Button Componentを設置し、ボタンが押されたら this.handlePressButton() を呼び出す */}
+        {/* TODO: 1. this.handlePressButton() を実行する処理を記述する */}
+        <Button
+          onPress={() => {}}
+          title="このボタンを押すと+1"
+        />
       </View>
     );
   }
