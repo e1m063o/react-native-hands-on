@@ -23,11 +23,14 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        {/* TODO: 3. MyComponent を挿入する */}
       </View>
     );
   }
 }
 
+/* TODO: 1. MyComponent のclassを作成する */
+/* TODO: 2. Textコンポーネントがreturnされるように、render()メソッド内を実装する */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
