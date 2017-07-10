@@ -8,7 +8,7 @@ iOSデバイスの画面上に、Chapter 4, Finished! と表示されれば完�
 # 手順
 
 1. App Component の constructor() 内で、
-   this.state に { content: “Chapter 4, Finished!” } を代入する
+   this.state に { content: "Chapter 4, Finished!" } を代入する
 2. MyComponent を呼び出す際に、
    this.state.content を content プロパティとして渡す
 

@@ -36,7 +36,7 @@ class MyComponent extends Component {
   render() {
     return (
       <FIXME>FIXME</FIXME>
-    );
+    )
   }
 }
 

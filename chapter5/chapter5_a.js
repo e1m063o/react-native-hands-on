@@ -27,7 +27,7 @@ export default class App extends Component {
   /* ボタンが押された時に実行するメソッド */
   handlePressButton() {
     /* TODO: 2. this.setState((prevState) => {}) を記述する */
-    /* TODO: 3. (prevState) => {} が { content: prevState.content + 1 } を return するようにする */
+    /* TODO: 3. (prevState) => {} が { content: prevState.content + 1 } を return するように変更する */
     this.setState((prevState) => {
       return { content: prevState.content + 1 };
     })
