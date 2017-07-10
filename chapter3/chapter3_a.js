@@ -21,6 +21,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        {/* TODO: 1. MyComponentにcontentプロパティを渡す */}
         <MyComponent content="Chapter 3, Finished!" />
       </View>
     );
@@ -31,6 +32,7 @@ class MyComponent extends Component {
   render() {
     return (
       <Text>
+        {/* TODO: 2. 親のAppコンポーネントから渡されたcontentプロパティを表示する*/}
         {this.props.content}
       </Text>
     )

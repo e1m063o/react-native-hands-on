@@ -32,7 +32,7 @@ class MyComponent extends Component {
   render() {
     return (
       <Text>
-        {/* TODO: 2. 親のApp Componentから渡されたcontentプロパティを表示する*/}
+        {/* TODO: 2. 親のAppコンポーネントから渡されたcontentプロパティを表示する*/}
         {this.FIXME.FIXME}
       </Text>
     )
