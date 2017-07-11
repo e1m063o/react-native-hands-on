@@ -36,6 +36,7 @@ FIXMEの部分を修正し、後述する仕様を満たすToDoアプリを完�
 */
 
 import React, { Component } from 'react';
+/* Chapter 1. Component を使う（importする） */
 import { StyleSheet, View, Text, FIXME, FIXME } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -63,7 +64,7 @@ const styles = StyleSheet.create({
 export default class App extends Component {
   constructor () {
     super();
-    /* Component に状態を持たせる */
+    /* Chapter 4. Component に状態を持たせる（初期状態を与える） */
     this.FIXME = {
       items: [
         '一つ一つの行がTODOになっています',
@@ -78,7 +79,7 @@ export default class App extends Component {
   /* 入力フォームでの入力が完了した際に呼ばれるメソッド */
   /* 配列の末尾に渡されたテキストが挿入されるように実装してある */
   addItem (content) {
-    /* Component の状態を変化させる */
+    /* Chapter 5. Component の状態を変化させる */
     this.FIXME((prevState) => {
       let items = prevState.items.concat();
       items.push(content);
@@ -89,7 +90,7 @@ export default class App extends Component {
   /* ToDoがタップされた時に呼ばれるメソッド */
   /* 配列のkey番目の要素が削除されるように実装してある */
   removeItem (key) {
-    /* Component の状態を変化させる */
+    /* Chapter 5. Component の状態を変化させる */
     this.FIXME((prevState) => {
       let items = prevState.items.concat();
       items.splice(key, 1);
@@ -100,11 +101,11 @@ export default class App extends Component {
   render () {
     return (
       <View style={styles.container}>
-        {/* Component を挿入する */}
+        {/* Chapter 1. Component を使う */}
         <FIXME onPressButton={(content) => {this.addItem(content)}} />
         {
           this.state.items.map((item, i) => (
-            /* Component を挿入する */
+            /* Chapter 1. Component を使う */
             <FIXME
               key={i}
               index={i}
@@ -122,6 +123,7 @@ class InputField extends Component {
   constructor () {
     super();
     /* 入力フォームに入力されたテキストを状態として持つ */
+    /* Chapter 4. Component に状態を持たせる */
     this.FIXME = {text: ''}
   }
 
@@ -129,16 +131,18 @@ class InputField extends Component {
   /* Appコンポーネントにフォームの入力内容を伝えるとともに */
   /* InputFieldコンポーネントの状態（入力されたテキストの情報）を初期化する */
   saveAndClear () {
-    /* 親Component から値を渡す（渡された値を使う） */
+    /* Chapter 3. 親Component から値を渡す（渡された値を使う） */
     this.FIXME.onPressButton(this.FIXME.text);
-    /* Component に状態を持たせる */
+
+    /* Chapter 5. Component の状態を変化させる */
     this.FIXME({text: ''});
   }
 
   render () {
     return (
       <View style={styles.inputField}>
-        {/* 親Component から値を渡す（渡された値を使う） */}
+        {/* Chapter 4. Component に状態を持たせる（現在の状態を参照する） */}
+        {/* Chapter 3. 親Component から値を渡す（TextInputに値を渡す） */}
         <TextInput
           onChangeText={(text) => this.setState({text: text})}
           value={this.FIXME.text}
@@ -155,10 +159,10 @@ class ToDoItem extends Component {
   render () {
     return (
       <View style={styles.toDoItem}>
-        {/* 親Component から値を渡す（渡された値を使う） */}
+        {/* Chapter 3. 親Component から値を渡す（渡された値を使う） */}
         <TouchableHighlight onPress={() => { this.FIXME.onPressItem(this.FIXME.index) }}>
           <Text style={styles.toDoItemText}>
-            {/* 親Component から値を渡す（渡された値を使う） */}
+            {/* Chapter 3. 親Component から値を渡す（渡された値を使う） */}
             {this.FIXME.content}
           </Text>
         </TouchableHighlight>
