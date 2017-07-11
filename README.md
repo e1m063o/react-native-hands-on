@@ -47,5 +47,5 @@
   - [TextInputコンポーネント](https://facebook.github.io/react-native/docs/textinput.html)
 - Expo
   - [https://snack.expo.io/](https://snack.expo.io/)
-- ES6
+- Qiita
   - [ES6について](http://qiita.com/soarflat/items/b251caf9cb59b72beb9b)
